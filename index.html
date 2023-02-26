@@ -1,0 +1,253 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+    <title>Web Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsivecss.css">
+    <link rel="icon"
+        href="https://e7.pngegg.com/pngimages/139/712/png-clipart-logo-youtube-graphic-designer-computer-icons-cool-miscellaneous-photography.png">
+    <script src="https://kit.fontawesome.com/26e9215b74.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <ul id="nav">
+            <li><a href="#test">Home</a></li>
+            <li><a href="#the-band">Band</a></li>
+            <li><a href="#tour-dates">Tour</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="showsubnav">
+                <a href="#2">More <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                </a>
+                <ul class="subnav">
+                    <li><a href="">Test1</a></li>
+                    <li><a href="">Test2</a></li>
+                    <li><a href="">Test3</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="block-search">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="block-mb-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div id="top" class="insert-block"></div>
+    <div id="content">
+        <div class="slider">
+            <div class="imgslider1">
+                <div class="text">
+                    <h2 class="text-title">Test</h2>
+                    <p class="text-des">aaaaaaaaaaaaaaaaaaaaa</p>
+                </div>
+            </div>
+        </div>
+        <!--end slider-->
+        <div class="bg-content1" id="the-band">
+            <div class="block-center">
+                <h2 class="text-title">THE BAND</h2>
+                <p class="text-des">We love music</p>
+                <p class="text-content">We have created a fictional band website. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="col3 mblock block-bandmember">
+                    <p>Name</p>
+                    <img src="/assets/image/bandmember.jpg" alt="">
+                </div>
+                <div class="col3 mblock block-bandmember">
+                    <p>Name</p>
+                    <img src="/assets/image/bandmember.jpg" alt="">
+                </div>
+                <div class="col3 mblock block-bandmember">
+                    <p>Name</p>
+                    <img src="/assets/image/bandmember.jpg" alt="">
+                </div>
+            </div> <!-- end block-center -->
+        </div> <!-- end bg-content1 -->
+        <div class="bg-content2" id="tour-dates">
+            <div class="block-center">
+                <h2 class="text-title">TOUR DATES</h2>
+                <p class="text-des">Remember to book your tickets!</p>
+                <ul class="list-tour">
+                    <li class="li-tour"><span>September</span> <span class="noactive">Sold out</span></li>
+                    <li class="li-tour"><span>October</span> <span class="noactive">Sold out</span> </li>
+                    <li class="li-tour"><span>November</span> <span class="active">3</span></li>
+                </ul>
+                <div class="col3 mblock mblock-img">
+                    <div class="img1"></div>
+                    <p>New York</p>
+                    <p class="text-date">Fri 27 Nov 2005</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="btn btn-hover  btn-tickets js-btn-tickets" href="">Buy Tickets</button>
+                </div>
+                <div class="col3 mblock mblock-img">
+                    <div class="img2"></div>
+                    <p>San Francisco</p>
+                    <p class="text-date">Fri 27 Nov 2005</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="btn btn-hover  btn-tickets js-btn-tickets" href="">Buy Tickets</button>
+                </div>
+                <div class="col3 mblock mblock-img">
+                    <div class="img3"></div>
+                    <p>Parisk</p>
+                    <p class="text-date">Fri 27 Nov 2005</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="btn btn-hover btn-tickets js-btn-tickets" href="">Buy Tickets</button>
+                </div>
+            </div> <!-- end block-center -->
+        </div> <!-- end bg-content2 -->
+        <div class="bg-content3" id="contact">
+            <div class="block-center">
+                <h2 class="text-title">CONTACT</h2>
+                <p class="text-des">Fan? Drop a note!</p>
+                <div class="col2 block-info-contact">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    Chicago, US
+                    <div></div>
+                    <i class="fa-solid fa-phone"></i>
+                    Phone: +00 151515
+                    <div></div>
+                    <i class="fa-solid fa-envelope"></i>
+                    Email: mail@mail.com
+                </div>
+                <div class="col2 block-form-contact">
+                    <form action="" class="form-contact">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Message" required>
+                        <button class="s-col1 s-mgr-0 btn btn-hover btn-contact">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <img src="/assets/image/map.jpg" alt="map">
+        </div>
+    </div>
+    <div id="test" class="testflexbox">
+        <div>1</div>
+        <div style="flex-shrink: 2;">2</div>
+        <div>3
+            <div>asas</div>
+        </div>
+        <div>4</div>
+    </div>
+    <div id="footer" class="text-center">
+        <i class="fa-brands fa-square-facebook fa-2xl"></i>
+        <i class="fa-brands fa-instagram fa-2xl"></i>
+        <i class="fa-brands fa-snapchat fa-2xl"></i>
+        <i class="fa-brands fa-pinterest-p fa-2xl"></i>
+        <i class="fa-brands fa-twitter fa-2xl"></i>
+        <i class="fa-brands fa-linkedin fa-2xl"></i>
+        <p>Powered by<a href="#"> w3.css</a></p>
+    </div>
+    <div id="root"></div>
+    <!-- modal -->
+    <div class="modal">
+        <form action="" class="form1">
+            <div class="headermodal">
+                <div class="modalclose">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <h2> <i class="fa fa-shopping-bag iconbag"></i>Tickets</h2>
+            </div>
+            <div class="pd-input">
+                <label class="loginname" for="email-input">Tên đăng nhập: </label>
+                <input type="text" name="Email" id="email-input" placeholder="Email....">
+                <label class="loginpassword" for="password-input">Mật khẩu: </label>
+                <input type="text" name="Password" id="password-input" placeholder="Password....">
+                <input type="button" name="Login" id="" value="Đăng nhập">
+            </div>
+        </form>
+    </div>
+    <!-- end modal -->
+    <script>
+        var $w2 = document.getElementById('test').addEventListener("click", function () {
+            document.getElementById('test').innerHTML = '<span>aaa</span>'
+        });
+    </script>
+    <script>
+        var ul = document.createElement('ul');
+        var li1 = document.createElement('li');
+        li1.innerText = 'List item 1';
+        li1.style = 'color:pink';
+        var li2 = document.createElement('li');
+        li2.innerText = 'List item 2';
+        li2.style = 'color:pink';
+
+        ul.appendChild(li1);
+        ul.appendChild(li2);
+        document.body.appendChild(ul);
+    </script>
+    <script type="text/babel">
+        {
+            function Items(obj) {
+                return (
+                    <div className="Item">
+                        <h2 className="title"> {obj.title}</h2>
+                        <p className="content">{obj.noidung}</p>
+                        <p className="date">{obj.ngaydang}</p>
+                        <button id="btntest" onClick={() => {
+                            func1(obj.title)
+                        }}>test</button>
+                    </div>
+                )
+            }
+            const func1 = (title) => {
+                var btn_element = document.getElementById('btntest')
+                btn_element.innerText = title;
+
+            }
+        }
+
+        const Forms = {
+            Input(obj) {
+                return (<input type={obj.type} />)
+            },
+            Input1() {
+                return (<input type="text" />)
+            },
+            CheckBox1(obj) {
+                return (<input type={obj.type} />)
+            }
+
+        }
+        function Button(obj) {
+            var Element;
+           
+            if (obj.onClick != undefined)
+                Element = 'button';
+                if (obj.href != undefined)
+                Element = 'a'; 
+            return (
+                <Element href={obj.href} onClick={obj.onClick}>a</Element>
+            )
+        }
+        function App() {
+            return (
+                <div className="wrapper">
+                    <Button
+                    href="https://fullstack.edu.vn/learning/reactjs?id=7353cba9-0a0b-4790-93cd-4fb19296adbb"
+                    />
+                </div>
+            )
+        }
+        ReactDOM.render(<App/>, document.getElementById('root'));
+    </script>
+    <script src="/mainjs.js"></script>
+
+</body>
+
+</html>
